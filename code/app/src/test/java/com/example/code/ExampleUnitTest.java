@@ -1,5 +1,6 @@
 package com.example.code;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -12,6 +13,11 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+        assertEquals(5, 2 + 1);
+    }
+
+    @Before
+    public void welcome() {
+        System.out.println("Hello");
     }
 }
